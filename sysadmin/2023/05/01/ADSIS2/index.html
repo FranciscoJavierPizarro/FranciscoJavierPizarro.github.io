@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ADSIS2</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Ingeniero informático. Unizar. Administración de sistemas. Ciberseguridad. Programación avanzada.">
+    <link rel="canonical" href="http://127.0.0.1:4000/sysadmin/2023/05/01/ADSIS2/">
+
+
+    <!-- Custom CSS & Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- Custom Fonts -->
+   
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <script src="https://kit.fontawesome.com/4460e0240b.js" crossorigin="anonymous"></script>
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+
+
+    <body id="page-top" class="index">
+      <div id="preloader">
+        <div class="load">
+          <hr />
+          <hr />
+          <hr />
+          <hr />
+        </div>
+      </div>
+      <script>// Function to disable scrolling
+        function disableScrolling() {
+            document.body.style.overflow = "hidden";
+        }
+        
+        // Function to enable scrolling
+        function enableScrolling() {
+            document.body.style.overflow = "auto";
+        }
+        
+        // Call disableScrolling when the preloader is displayed
+        disableScrolling();</script>
+
+        
+      <section id="landing">
+<div id="landing">
+    <div class="landing-title">
+      <h1>Hey, soy
+        <span class="highlight-title">Francisco Javier Pizarro Martínez</span>,
+      </h1>
+      <h1>
+        <span id="txt-rotate" data-period="2000"
+              data-rotate='["Ingeniero informático", "SysAdmin.", "Blue Team", "Red Team", "Developer", "Si te interesa baja..."]'
+        ></span>
+    </h1>
+
+    
+    <script>
+        /* Typing Text JavaScript Code */
+        var TxtRotate = function(el, toRotate, period) {
+            this.toRotate = toRotate;
+            this.el = el;
+            this.loopNum = 0;
+            this.period = parseInt(period, 10) || 2000;
+            this.txt = '';
+            this.tick();
+            this.isDeleting = false;
+        };
+
+        TxtRotate.prototype.tick = function() {
+            var i = this.loopNum % this.toRotate.length;
+            var fullTxt = this.toRotate[i];
+
+            if (this.isDeleting) {
+                this.txt = fullTxt.substring(0, this.txt.length - 1);
+            } else {
+                this.txt = fullTxt.substring(0, this.txt.length + 1);
+            }
+            this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
+
+            var that = this;
+            var delta = 200 - Math.random() * 100;
+
+            if (this.isDeleting) {
+                delta /= 5;
+            }
+
+            if (!this.isDeleting && this.txt === fullTxt) {
+                delta = this.period;
+                this.isDeleting = true;
+            } else if (this.isDeleting && this.txt === '') {
+                this.isDeleting = false;
+                this.loopNum++;
+                delta = 500;
+            }
+
+            setTimeout(function() {
+                that.tick();
+            }, delta);
+        };
+
+        // Initialize TxtRotate with your desired element and data
+        var txtRotate = new TxtRotate(
+            document.getElementById("txt-rotate"),
+            JSON.parse(document.getElementById("txt-rotate").getAttribute("data-rotate")),
+            document.getElementById("txt-rotate").getAttribute("data-period")
+        );
+    </script>
+
+
+      <div class="landing-icons">
+          <a class="social-link email" aria-label="My E-Mail" href="mailto:pizarrojavier000@gmail.com">
+            <svg viewBox="0 0 200 200" class="circle">
+              <circle cx="100" cy="100" r="80" />
+            </svg>
+            <div class="social">
+              <!-- <svg class="social-svg" viewBox="0 0 48 48">
+                <use x="12" y="12" width="24" height="24" viewBox="0 0 48 48" xlink:href="/assets/img/solid.svg#envelope""></use>
+              </svg> -->
+              <i class="fa-regular fa-envelope"></i>
+            </div>
+            <span class="label">E-Mail</span>
+          </a>
+  
+          <a class="social-link" aria-label="My GitHub" target="_blank" rel="noreferrer"
+            href="https://github.com/FranciscoJavierPizarro"
+          >
+            <svg viewBox="0 0 200 200" class="circle">
+              <circle cx="100" cy="100" r="80" />
+            </svg>
+            <div class="social">
+              <!-- <svg class="social-svg" viewBox="0 0 48 48">
+                <use x="12" y="12" width="24" height="24" viewBox="0 0 48 48" xlink:href="/assets/img/brands.svg#github"></use>
+              </svg> -->
+              <i class="fa-brands fa-github"></i>
+            </div>
+            <span class="label">GitHub</span>
+          </a>
+  
+        
+  
+        
+  
+          <a class="social-link linkedin" aria-label="My LinkedIn" target="_blank"
+            rel="noreferrer" href="https://es.linkedin.com/in/franciscopizarrojavier"
+          >
+            <svg viewBox="0 0 200 200" class="circle">
+              <circle cx="100" cy="100" r="80" />
+            </svg>
+            <div class="social">
+              <!-- <svg class="social-svg" viewBox="0 0 48 48">
+                <use x="12" y="12" width="24" height="24" viewBox="0 0 48 48" xlink:href="/assets/img/brands.svg#linkedin-in"></use>
+              </svg> -->
+              <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+            <span class="label">LinkedIn</span>
+          </a>
+          
+          
+
+          <a class="social-link Telegran" aria-label="My Telegran" target="_blank"
+            rel="noreferrer" href="https://t.me/pizarrojavier"
+          >
+            <svg viewBox="0 0 200 200" class="circle">
+              <circle cx="100" cy="100" r="80" />
+            </svg>
+            <div class="social">
+              <!-- <svg class="social-svg" viewBox="0 0 48 48">
+                <use x="12" y="12" width="24" height="24" viewBox="0 0 48 48" xlink:href="/assets/img/brands.svg#Telegran-in"></use>
+              </svg> -->
+              <i class="fa-brands fa-telegram"></i>
+            </div>
+            <span class="label">Telegran</span>
+          </a>
+       
+      </div>
+    </div>
+  </div>
+</section>
+      <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- <a class="navbar-brand page-scroll" href="#page-top">Francisco Javier Pizarro Martínez</a> -->
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#landing">Inicio</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#perfil">Perfil</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#portafolio">Portafolio</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#trayectoria">Trayectoria</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+<!--
+        
+          
+        
+          
+        
+          
+        
+ -->
+
+
+      
+    <!-- Services Section -->
+    <section id="perfil" class="bg-black">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Perfil</h2>
+                    <h3 class="section-subheading text-muted">Este es mi perfil como ingeniero informático.</h3>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-terminal  fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Administración de sistemas</h4>
+                    <p class="text-muted">Manejo desde MVs onprem o en cloud con IaC, hasta despliegues sobre entornos complejos como K8s, experiencia en Linux, OpenBSD. He trabajado con Terraform, Ansible, Puppet, KVM.</p>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-shield-halved fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Ciberseguridad</h4>
+                    <p class="text-muted">Experiencia como Blue Team, he trabajado con Firewalls, SIEMs, SOARs, EDRs. Tanto a nivel de desarrollo de CDUs, como arquitecto de infraestructura y como miembro de respuesta rápida a inccidencias.</p>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-laptop-code fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Programación</h4>
+                    <p class="text-muted">He trabajado en los distintos paradigmas de la programación: Funcional, imperativa y lógica. Dada mi especialidad en computación tengo unas bases en algoritmia muy fuertes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Portfolio Grid Section -->
+    <section id="portafolio" class="bg-darkest-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Portfolio</h2>
+                    <h3 class="section-subheading text-muted">Aquí estan algunos de mis proyectos mas relevantes como ingeniero informático.</h3>
+                </div>
+            </div>
+            <div class="row">
+            
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <!-- <i class="fa fa-plus fa-3x"></i> -->
+                            </div>
+                        </div>
+                        <img src="img/portfolio/thtfg.png" class="img-responsive img-centered" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>TFG</h4>
+                        <p class="text-muted">SOC OpenSource</p>
+                    </div>
+                </div>
+            
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <!-- <i class="fa fa-plus fa-3x"></i> -->
+                            </div>
+                        </div>
+                        <img src="img/portfolio/thadsis2.png" class="img-responsive img-centered" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>ADSIS2</h4>
+                        <p class="text-muted">Distributed Systems Administration</p>
+                    </div>
+                </div>
+            
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <!-- <i class="fa fa-plus fa-3x"></i> -->
+                            </div>
+                        </div>
+                        <img src="img/portfolio/threign.png" class="img-responsive img-centered" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>REIGN CHESS</h4>
+                        <p class="text-muted">Proyecto software</p>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- About Section -->
+    <section id="trayectoria">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Trayectoria</h2>
+                    <h3 class="section-subheading text-muted">Eventos y hackathones en los que he participado.</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="timeline">
+                        
+                        
+                            <li class="">
+                                <div class="timeline-image">
+                                    <img class="img-circle img-responsive" src="img/events/1.jpg" alt="">
+                                </div>
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                        <h4>2023</h4>
+                                        <h4 class="subheading">Farewell rounds</h4>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <p class="text-muted">Hackathon organizado por Google, en el hay 4 problemas de distintas dificultades a resolver de forma individual, fue una forma de poner en práctica todos los nuevos conocimientos adquiridos en la carrera desde la edición del año pasado, así como de ver una progresión en la calidad de las soluciones que implemento como desarrollador.</p>
+                                    </div>
+                                </div>
+                            </li>
+                        
+                        
+                            <li class="timeline-inverted">
+                                <div class="timeline-image">
+                                    <img class="img-circle img-responsive" src="img/events/1.jpg" alt="">
+                                </div>
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                        <h4>2022</h4>
+                                        <h4 class="subheading">Google Hashcode</h4>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <p class="text-muted">Hackathon anual organizado por Google, fue una experiencia divertida de trabajo en equipo, en la que tuvimos que afrontar un problema de optimización dinámica en el cual cada decisión afectaba al estado del problema para las siguientes. Para resolver el problema empleamos el lenguaje python con una aproximación de algoritmo voraz.</p>
+                                    </div>
+                                </div>
+                            </li>
+                        
+                        
+                            <li class="">
+                                <div class="timeline-image">
+                                    <img class="img-circle img-responsive" src="img/events/1.jpg" alt="">
+                                </div>
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                        <h4>2022</h4>
+                                        <h4 class="subheading">Locked Shields</h4>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <p class="text-muted">Ejercicio de ciberseguridad organizado por la OTAN, fue único debido a que en la ronda civil solo participamos 12 equipos en toda Europa, siendo el nuestro el único representante de España, este ejercicio es conocido por ser el más realista de su tipo. Nuestro equipo desempeñaba el papel de BlueTeam en la red de un país entero ya comprometida, con la labor de preparar durante 24 horas la defensa y llevarla acabo durante otras 24 horas durante las cuales la red es atacada.</p>
+                                    </div>
+                                </div>
+                            </li>
+                        
+                        
+                            <li class="timeline-inverted">
+                                <div class="timeline-image">
+                                    <img class="img-circle img-responsive" src="img/events/1.jpg" alt="">
+                                </div>
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                        <h4>2023</h4>
+                                        <h4 class="subheading">Locked Shields</h4>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <p class="text-muted">Ejercicio de ciberseguridad organizado por la OTAN, este ejercicio es conocido por ser el más realista de su tipo. A diferencia de la edición anterior en esta al contar con más conocimientos, como equipo puntuamos considerablemente bien respecto a los demás equipos en las categorías que participamos.</p>
+                                    </div>
+                                </div>
+                            </li>
+                        
+                        
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <h4>+?
+                                    <br>:D
+                                <br>Stay
+                            <br>tuned.</h4>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+      <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <!--     <ul class="list-inline social-buttons">
+                        
+                        <li><a href="http://twitter.com/jekyllrb"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        
+                        <li><a href="http://github.com/jekyll"><i class="fa fa-github"></i></a>
+                        </li>
+                        
+                    </ul> -->
+                </div>
+                <div class="col-md-4">
+                    <span class="copyright">Copyright &copy; Francisco Javier Pizarro Martínez 2023</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+     <!-- Portfolio Modals -->
+ 
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2 style="color: black">TFG</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/ntfg.png" class="img-responsive img-centered" alt="image-alt">
+                            <p style="color: black">Este TFG fue mi proyecto final para graduarme como ingeniero informático, este trata sobre el diseño, implementación y explotación de un sistema SOC basado en software OpenSource. Tuvo una primera etapa de administrador de sistemas en la que se puso en marcha la distinta infraestructura(MVs, SIEM, SOAR, EDR, Firewall...). Posteriormente tuvo una segunda fase en la que desde la perspectiva de un Blue Team se implantarón y probaron los distintos CDUs.</p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com">NOLOGIN</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://startbootstrap.com">Agosto 2023</a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com">Ciberseguridad</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2 style="color: black">ADSIS2</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/nadsis2.png" class="img-responsive img-centered" alt="image-alt">
+                            <p style="color: black">En la primera parte se realizo el despliegue de una red con todo lo necesario para una empresa hoy en día desde lo más básico partiendo de la red, VLANs y firewalls hasta los elementos más avanzados como el directorio activo y el sistema de ficheros en red. En la segunda parte se trabajo todos los aspectos de HA de K8s, montando al final sobre este un sistema de almacenamiento distribuido Ceph, que empleaban una página web y un registro de contenedores, aquí se trabajo también la IaC con Terraform y el provisionamiento a alto nivel con Puppet y Ansible.</p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com">Unizar</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://startbootstrap.com">Mayo 2023</a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com">SysAdmin</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2 style="color: black">REIGN CHESS</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/nreign.png" class="img-responsive img-centered" alt="image-alt">
+                            <p style="color: black">En este proyecto llevado a cabo por un grupo de 7 personas, se realizo un desarrollo completo de software como si de una empresa real se tratase, teniendo un cliente al que satisfacet. El proyecto cuenta con un Backend común desarrollado en ExpressJS, un frontend web desarrollado en ReactJS y una aplicación móvil desarrollada en Flutter. Este es un juego de ajedrez con distintas mecánicas tales como jugar contra una IA, jugar torneos, jugar partidas privadas, jugar competitivo, poder pausar y reanudar partidas. Fue una gran experiencia de aprendizaje.</p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com">REIGN</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://startbootstrap.com">Abril 2023</a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com">Programador</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+     <!-- jQuery Version 1.11.0 -->
+    <script src="../js/jquery-1.11.0.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="../js/jquery.easing.min.js"></script>
+    <script src="../js/classie.js"></script>
+    <script src="../js/cbpAnimatedHeader.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="../js/agency.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="../js/particles.js"></script>
+    <script>
+      // window.addEventListener('load', () => {
+      //   const preloader = document.getElementById('preloader');
+      //   preloader.style.display = 'none'; // Hide the preloader when the page has loaded
+      // });
+
+
+      window.addEventListener('load', () => {
+      const preloader = document.getElementById('preloader');
+      setTimeout(() => {
+        preloader.style.display = 'none'; // Hide the preloader after a delay
+        enableScrolling();
+      }, 1000); // Adjust the delay time as needed (in milliseconds)
+   });
+    </script>
+    <script>
+      
+    </script>
+    
+
+
+
+    </body>
+</html>
