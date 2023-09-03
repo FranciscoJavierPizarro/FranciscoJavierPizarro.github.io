@@ -113,6 +113,11 @@ a {
     color: #00cc00;
 }
 
+strong {
+    color: #00cc00;
+}
+
+
 a:hover,
 a:focus,
 a:active,
@@ -543,9 +548,14 @@ section h3.section-subheading {
     display: table;
 }
 
-.timeline>li:after {
+/* .timeline>li:after {
+    clear: both;
+} */
+
+.timeline>li:not(:last-child):after {
     clear: both;
 }
+
 
 .timeline>li .timeline-panel {
     float: right;
