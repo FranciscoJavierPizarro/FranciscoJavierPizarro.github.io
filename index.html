@@ -170,7 +170,7 @@
           
           
 
-          <a class="social-link Telegran" aria-label="My Telegran" target="_blank"
+          <a class="social-link Telegram" aria-label="My Telegram" target="_blank"
             rel="noreferrer" href="https://t.me/pizarrojavier"
           >
             <svg viewBox="0 0 200 200" class="circle">
@@ -264,7 +264,7 @@
                         <i class="fa fa-shield-halved fa-stack-1x fa-inverse"></i>
                     </span>
                     <h4 class="service-heading">Ciberseguridad</h4>
-                    <p class="text-muted">Experiencia como Blue Team, he trabajado con Firewalls, SIEMs, SOARs, EDRs. Tanto a nivel de desarrollo de CDUs, como arquitecto de infraestructura y como miembro de respuesta rápida a inccidencias.</p>
+                    <p class="text-muted">Experiencia como Blue Team, he trabajado con Firewalls, SIEMs, SOARs, EDRs. Tanto a nivel de desarrollo de CDUs, como arquitecto de infraestructura y como miembro de respuesta rápida a incidencias.</p>
                 </div>
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
@@ -286,10 +286,10 @@
                     <h3 class="section-subheading text-muted">Aquí estan algunos de mis proyectos mas relevantes como ingeniero informático.</h3>
                 </div>
             </div>
-            <div class="row">
+            <div class="row" style="display: flex; justify-content: center;">
             
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                <div class="col-md-4 col-sm-6 portfolio-item ">
+                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
                                 <!-- <i class="fa fa-plus fa-3x"></i> -->
@@ -299,26 +299,11 @@
                     </a>
                     <div class="portfolio-caption">
                         <h4>TFG</h4>
-                        <p class="text-muted">SOC OpenSource</p>
+                        <p class="text-muted">Diseño, implementación y operación de un SOC basado en software OpenSource</p>
                     </div>
                 </div>
             
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <!-- <i class="fa fa-plus fa-3x"></i> -->
-                            </div>
-                        </div>
-                        <img src="img/portfolio/thadsis2.png" class="img-responsive img-centered" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>ADSIS2</h4>
-                        <p class="text-muted">Distributed Systems Administration</p>
-                    </div>
-                </div>
-            
-                <div class="col-md-4 col-sm-6 portfolio-item">
+                <div class="col-md-4 col-sm-6 portfolio-item ">
                     <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
@@ -329,7 +314,7 @@
                     </a>
                     <div class="portfolio-caption">
                         <h4>REIGN CHESS</h4>
-                        <p class="text-muted">Proyecto software</p>
+                        <p class="text-muted">Proyecto desarrollado para la asignatura de Proyecto Software</p>
                     </div>
                 </div>
             
@@ -351,6 +336,22 @@
                 <div class="col-lg-12">
                     <ul class="timeline">
                         
+                        
+                        
+                            <li class="timeline-inverted">
+                                <div class="timeline-image">
+                                    <img class="img-circle object-fit: cover; img-responsive" src="img/events/secureTheValley.jpg" alt="">
+                                </div>
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                        <h4>2023</h4>
+                                        <h4 class="subheading">Secure The Valley</h4>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <p class="text-muted">Hackathon interdisciplinar de ciberseguridad, en esta había 4 categorías de retos. Aplicación de modelos de ML para detección de anomalías(ataques) en logs windows, pentesting sobre dispositivos IOT, diseño de una solución de seguridad para IOT y análisis en profundidad de tweets para extraer conclusiones significativas sobre estos, como patrones de comportamiento durante catastrofes naturales.</p>
+                                    </div>
+                                </div>
+                            </li>
                         
                         
                             <li class="">
@@ -501,7 +502,7 @@
 
      <!-- Portfolio Modals -->
  
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
@@ -516,7 +517,7 @@
                             <h2 style="color: black">TFG</h2>
                             <hr class="star-primary">
                             <img src="img/portfolio/ntfg.png" class="img-responsive img-centered" alt="image-alt">
-                            <p style="color: black">Este TFG fue mi proyecto final para graduarme como ingeniero informático, este trata sobre el diseño, implementación y explotación de un sistema SOC basado en software OpenSource. Tuvo una primera etapa de administrador de sistemas en la que se puso en marcha la distinta infraestructura(MVs, SIEM, SOAR, EDR, Firewall...). Posteriormente tuvo una segunda fase en la que desde la perspectiva de un Blue Team se implantarón y probaron los distintos CDUs.</p>
+                            <p style="color: black; text-align: justify;">Este TFG es mi proyecto final para graduarme como ingeniero informático. Este trata sobre el diseño, implementación y explotación de un sistema SOC basado en software OpenSource. La memoria por temas administrativos no se encuentra aún publicada. La infraestructura final contaba con Graylog como SIEM, Shuffle como SOAR y Wazuh como EDR/IDS. Los casos de uso contemplados por el sistema son los siguientes:Análisis de Phishing, Fuerza bruta a SSH, Accesos a URLs Webs maliciosas conocidas, Ataque DDOS, Data Leaks USB + Rubber Ducky Attack, Ataque de SQL Injection, Accesos a la red TOR, Análisis y detección de anomalías en red, Rescue-Terminal y Cuarentena completa de Hosts comprometidos.</p>
                             <ul class="list-inline item-details">
                                 <li>Client:
                                     <strong>NOLOGIN
@@ -531,49 +532,9 @@
                                     </strong>
                                 </li>
                             </ul>
-                            <a href="">
+                            <!-- <a href="">
                                 <button type="button" class="btn btn-primary "><i class="fa fa-link"></i> Check it.</button>
-                            </a>    
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2 style="color: black">ADSIS2</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/nadsis2.png" class="img-responsive img-centered" alt="image-alt">
-                            <p style="color: black">En la primera parte se realizo el despliegue de una red con todo lo necesario para una empresa hoy en día desde lo más básico partiendo de la red, VLANs y firewalls hasta los elementos más avanzados como el directorio activo y el sistema de ficheros en red. En la segunda parte se trabajo todos los aspectos de HA de K8s, montando al final sobre este un sistema de almacenamiento distribuido Ceph, que empleaban una página web y un registro de contenedores, aquí se trabajo también la IaC con Terraform y el provisionamiento a alto nivel con Puppet y Ansible.</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong>Unizar
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong>Mayo 2023
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong>SysAdmin
-                                    </strong>
-                                </li>
-                            </ul>
-                            <a href="https://github.com/FranciscoJavierPizarro/distributed-systems-administration">
-                                <button type="button" class="btn btn-primary "><i class="fa fa-link"></i> Check it.</button>
-                            </a>    
+                            </a>     -->
                         </div>
                     </div>
                 </div>
@@ -596,7 +557,7 @@
                             <h2 style="color: black">REIGN CHESS</h2>
                             <hr class="star-primary">
                             <img src="img/portfolio/nreign.png" class="img-responsive img-centered" alt="image-alt">
-                            <p style="color: black">En este proyecto llevado a cabo por un grupo de 7 personas, se realizo un desarrollo completo de software como si de una empresa real se tratase, teniendo un cliente al que satisfacet. El proyecto cuenta con un Backend común desarrollado en ExpressJS, un frontend web desarrollado en ReactJS y una aplicación móvil desarrollada en Flutter. Este es un juego de ajedrez con distintas mecánicas tales como jugar contra una IA, jugar torneos, jugar partidas privadas, jugar competitivo, poder pausar y reanudar partidas. Fue una gran experiencia de aprendizaje.</p>
+                            <p style="color: black; text-align: justify;">En este proyecto, llevado a cabo por un grupo de 7 personas, se realizo un desarrollo completo de software como si de una empresa real se tratase, teniendo un cliente al que satisfacer. El proyecto cuenta con un Backend común desarrollado en ExpressJS, un frontend web desarrollado en ReactJS y una aplicación móvil desarrollada en Flutter. Este es un juego de ajedrez con distintas mecánicas tales como jugar contra una IA, jugar torneos, jugar partidas privadas, jugar competitivo, poder pausar y reanudar partidas. Fue una gran experiencia de aprendizaje tanto a nivel de tecnologías como a nivel de gestión de recursos y tareas.Actualmente la versión web de dicho proyecto sigue funcinando completamente y se encuentra disponible en https://reign.gracehopper.xyz/</p>
                             <ul class="list-inline item-details">
                                 <li>Client:
                                     <strong>REIGN
@@ -611,9 +572,9 @@
                                     </strong>
                                 </li>
                             </ul>
-                            <a href="https://reign.gracehopper.xyz/">
+                            <!-- <a href="https://reign.gracehopper.xyz/">
                                 <button type="button" class="btn btn-primary "><i class="fa fa-link"></i> Check it.</button>
-                            </a>    
+                            </a>     -->
                         </div>
                     </div>
                 </div>
