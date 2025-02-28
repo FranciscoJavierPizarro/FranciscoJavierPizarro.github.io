@@ -5,9 +5,22 @@
     <description>Ingeniero informático. Unizar. Administración de sistemas. Ciberseguridad. Programación avanzada.</description>
     <link>https://franciscojavierpizarro.github.io/</link>
     <atom:link href="https://franciscojavierpizarro.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sat, 02 Nov 2024 12:29:53 +0100</pubDate>
-    <lastBuildDate>Sat, 02 Nov 2024 12:29:53 +0100</lastBuildDate>
+    <pubDate>Fri, 28 Feb 2025 11:58:43 +0100</pubDate>
+    <lastBuildDate>Fri, 28 Feb 2025 11:58:43 +0100</lastBuildDate>
     <generator>Jekyll v4.3.2</generator>
+    
+      <item>
+        <title>Cyber-Writeups</title>
+        <description>
+</description>
+        <pubDate>Fri, 28 Feb 2025 00:00:00 +0100</pubDate>
+        <link>https://franciscojavierpizarro.github.io/ciberseguridad/2025/02/28/WRITEUPS/</link>
+        <guid isPermaLink="true">https://franciscojavierpizarro.github.io/ciberseguridad/2025/02/28/WRITEUPS/</guid>
+        
+        
+        <category>Ciberseguridad</category>
+        
+      </item>
     
       <item>
         <title>TFG</title>
